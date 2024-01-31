@@ -360,8 +360,14 @@ h6 {
 }
 .hero-area .image-wrapper img {
   width: 80%;
-  margin-left: auto;
+  /* margin-left: auto; */
   margin-right: 0;
+  z-index: 100;
+  position: relative;
+  left: -50px;
+  bottom: 0;
+  top: -20px;
+  right: 0;
 }
 .hero-area .image-wrapper:hover .hero-icons li {
   transform: rotate(0deg);
@@ -378,6 +384,7 @@ h6 {
   font-size: 60px;
   line-height: 1;
   transition: 0.4s;
+  z-index: 10;
 }
 .hero-area .hero-icons li:first-child {
   left: 96px;
