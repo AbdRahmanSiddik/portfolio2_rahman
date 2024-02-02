@@ -259,7 +259,7 @@ $('.page-scroll').on('click', function (e) {
 
   $('html,body').animate({
     scrollTop: elemenHref.offset().top-1
-  });
+  }, 1250, 'swing');
 
   e.preventDefault();
 
