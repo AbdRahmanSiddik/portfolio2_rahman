@@ -264,3 +264,22 @@ $('.page-scroll').on('click', function (e) {
   e.preventDefault();
 
 });
+
+
+// number of project
+$(".number-project").each(function() {
+  var valueDisplays = $(this);
+  var startValue = 0;
+  var endValue = parseInt(valueDisplays.attr("data-val"));
+  var interval = 2500;
+
+  var duration = Math.floor(interval / endValue);
+  var counter = setInterval(function () {
+    startValue += 1;
+    valueDisplays.text(startValue);
+
+    if (startValue === endValue) {
+      clearInterval(counter);
+    }
+  }, duration);
+});
